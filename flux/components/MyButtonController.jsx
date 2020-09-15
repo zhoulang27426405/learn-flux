@@ -9,11 +9,9 @@ const MyButtonController = () => {
     ListStore.addChangeListener(() => setItems([...ListStore.getAll()]))
     return () => ListStore.removeChangeListener()
   })
-
   function onClick() {
     ButtonActions.addNewItem('new item')
   }
-
   return (
     <div>
       <ul>{items.map((item, i) => (<li key={i}>{item}</li>))}</ul>
