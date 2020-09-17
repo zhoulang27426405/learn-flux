@@ -6,3 +6,5 @@
  * 全局变量
  * store模式
  * flux
+ * redux
+ * vuex
